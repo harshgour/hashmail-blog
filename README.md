@@ -1,34 +1,99 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+For running the app locally,
 
 ```bash
-npm run dev
-# or
-yarn dev
+yarn && yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<hr>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Project Description
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+This Project is a blog landing page using NextJS, Tailwindcss
 
-## Learn More
+### Components
 
-To learn more about Next.js, take a look at the following resources:
+- **Layout.js** -> This file consists of basic layout of the website (i.e. Header, Main Content, Footer)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Header** -> This consists of two Header
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  - Header Mobile
+  - Header Desktop
 
-## Deploy on Vercel
+- **Footer** -> This consists of :
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  - Footer bottom : Copyright and Socials.
+  - Footer Menu : This comprises of all menu sections as a grid.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Main content** on landing page is divided into 5 sections :
+  - Hero section
+  - Featured Blogs section
+  - Blogs section
+  - Careers section
+
+All custom classes are added in:
+`./styles/custom-classes.scss`
+
+All utility functions such as `getBlogPaths`, `getAllBlogs`, `getFeaturedBlogs`, `getBlogData` are added in: `./utils/index.js`
+
+For now, all assets are added in `./public/assets`
+
+Custom 404 has been made with basic layout of `header` and `footer`
+
+**Shared** :
+
+- `GradientBorder` consists of border used in footer.
+- `Socials` consists of all socials in footer
+
+<hr>
+
+## Here are some screenshots of the application
+
+### Desktop
+
+<img src="./markdown_images/hashmail_desktop.png" alt="Hashmail Blog Desktop" style="width:100%;"/>
+
+### Tablet
+
+<img src="./markdown_images/hashmail_tablet.png" alt="Hashmail Blog Desktop" style="width:100%;margin-bottom:10px;"/>
+
+<img src="./markdown_images/hashmail_footer_tablet.png" alt="Hashmail Blog Desktop" style="width:100%;"/>
+
+### Mobile
+
+<div style="display: flex;justify-content:space-between;margin-bottom:10px;">
+
+<img src="./markdown_images/hashmail_mobile.png" alt="Hashmail Blog Desktop" style="width:48%;"/>
+
+<img src="./markdown_images/hashmail_menu_mobile.png" alt="Hashmail Blog Desktop" style="width:48%;"/>
+
+</div>
+
+<div style="display: flex;justify-content:space-between;margin-bottom:10px;">
+
+<img src="./markdown_images/hashmail_blogs_mobile.png" alt="Hashmail Blog Desktop" style="width:48%;"/>
+
+<img src="./markdown_images/hashmail_featured_mobile.png" alt="Hashmail Blog Desktop" style="width:48%;"/>
+
+</div>
+
+<div style="display: flex;justify-content:space-between;">
+
+<img src="./markdown_images/hashmail_careers_mobile.png" alt="Hashmail Blog Desktop" style="width:48%;"/>
+
+<img src="./markdown_images/hashmail_footer_mobile.png" alt="Hashmail Blog Desktop" style="width:48%;"/>
+
+</div>
+
+<hr>
+
+### Difficulties
+
+_Dynamic Grid implementation was tried but was not able to do. `components/NotSoInterestingGrid.js` consist of a grid cursor. This is not a correct implementation for this._
+
+<hr>
+
+<center><b>Thank you!!</b></center>

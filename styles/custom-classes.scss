@@ -1,0 +1,29 @@
+.layout-container {
+	@apply container mx-auto;
+}
+
+.flex-row-center {
+	@apply flex flex-row justify-center items-center;
+}
+
+.flex-row-between {
+	@apply flex flex-row justify-between items-center;
+}
+
+.text-gradient-red {
+	@apply bg-gradient-to-r from-lightRed to-darkRed;
+	background-clip: text;
+	color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.button-primary {
+	background-image: linear-gradient(#1e2128, #1e2128);
+	background-size: 0 100%;
+	background-repeat: no-repeat;
+	transition: 0.4s;
+	&:hover {
+		background-size: 100% 100%;
+	}
+}
