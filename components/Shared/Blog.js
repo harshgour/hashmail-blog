@@ -28,7 +28,7 @@ const Blog = ({ blog, lastBlog = false, sectionType }) => {
 							sectionType === "featured" && lastBlog
 								? "sm:mt-4 sm:mb-8 lg:mt-8 lg:mb-10"
 								: "sm:mt-4 sm:mb-8"
-						} my-4 text-lg sm:text-xl lg:text-3xl leading-snug font-medium lowercase line-clamp-2`}>
+						} my-4 text-lg lg:text-2xl xl:text-3xl leading-snug font-medium lowercase line-clamp-2`}>
 						{blog.title}
 					</h2>
 					<span className='text-primary px-6 py-2 sm:px-8 sm:py-3 lg:px-10 text-sm sm:text-lg lg:text-xl font-medium border-2 border-primary hover:text-white transition-all cursor-pointer button-primary'>
